@@ -1,5 +1,6 @@
 document.getElementById('searchBtn').addEventListener('click', function() {
     const username = document.getElementById('username').value;
+    const token ='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'
     if (username) {
         fetch(`https://api.github.com/users/${username}`)
             .then(response => response.json())
